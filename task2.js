@@ -6,7 +6,7 @@ const schema = yup.object({
   price: yup.number('Price is required and should be a number'),
   description: yup.string('Description is required and should be a string'),
   categoryId: yup.number('Category ID is required and should be a number'),
-  images: yup.array().of(yup.string()).required('Images is required and should be an array of strings')
+  images: yup.string('Images is required and should be an array of strings')
 });
 const body ={
     "title": "5555",
